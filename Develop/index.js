@@ -57,11 +57,18 @@ const questions = [
 
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// Function that write input data for README to file 
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
-// TODO: Create a function to initialize app
-function init() {}
+// Initialize function
+function init() {
+    inquirer.prompt(questions).then((inqurierResponses) => {
+        console.log('Generating README...');
+        // TODO: call writeToFile
+    })
+}
 
 // Function call to initialize app
 init();
