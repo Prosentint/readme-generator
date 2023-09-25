@@ -50,11 +50,15 @@ function generateMarkdown(data) {
 
   * [Contributing](#contributing)
 
+  * [Tests](#tests)
+
   * [Questions](#questions)
 
   ## Installation
 
-  ${data.contributing}
+  To install dependencies, run the following command:
+
+  ${data.installation}
 
   ## Usage
 
@@ -64,7 +68,18 @@ function generateMarkdown(data) {
 
   ## Contributing
 
+  ${data.contributing}
+
+  ## Tests
+
+  To run tests, use the following command:
+
+  ${data.test}
+
   ## Questions
+
+  If you have any questions you can reach me directly using email: ${data.email}. 
+  Also you can find more or my projects on my GitHub page [${data.github}](https://github.com/${data.github})
 
 `;
 }
